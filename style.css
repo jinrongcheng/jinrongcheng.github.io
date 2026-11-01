@@ -116,3 +116,10 @@
 .plank h3,.timeline-item h2,.project-card h2,.writing-item h2,.work-row h3{letter-spacing:-.01em;line-height:1.15}
 .image-story-copy h2,.closing h2,.contact-layout h2{letter-spacing:-.01em;line-height:1.08}
 .wordmark{letter-spacing:0}
+
+/* ---- V5c: fade gradient from photo into the text panel ---- */
+.campaign-hero-content{position:relative}
+.campaign-hero-content:after{content:"";position:absolute;left:-140px;top:0;bottom:0;width:140px;background:linear-gradient(to right,rgba(246,241,231,0),var(--cream));pointer-events:none;z-index:1}
+@media(max-width:800px){
+ .campaign-hero-content:after{left:0;right:0;top:-140px;bottom:auto;width:auto;height:140px;background:linear-gradient(to bottom,rgba(246,241,231,0),var(--cream))}
+}
