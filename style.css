@@ -123,3 +123,9 @@
 @media(max-width:800px){
  .campaign-hero-content:after{left:0;right:0;top:-140px;bottom:auto;width:auto;height:140px;background:linear-gradient(to bottom,rgba(246,241,231,0),var(--cream))}
 }
+
+/* ---- V6: force 75/25 tracks, prevent content forcing them wider, cache-busted CSS ---- */
+.campaign-hero{grid-template-columns:3fr 1fr;width:100%}
+.campaign-hero > *{min-width:0}
+.campaign-hero-photo{min-width:0}
+.campaign-hero-content{min-width:0;overflow-wrap:break-word}
