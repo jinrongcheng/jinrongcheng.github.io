@@ -316,3 +316,7 @@ main{animation:page-in .5s ease both}
 .prose ul{line-height:1.8;color:#3e4960;padding-left:20px}
 .prose li{margin-bottom:8px}
 @media(max-width:460px){.hero-divider span:last-child{display:none}}
+
+/* ---- V53 real vector icons instead of font symbols (iOS renders those as emoji-like glyphs) ---- */
+svg.icon{width:1em;height:1em;vertical-align:-0.15em;flex:none}
+.menu-toggle svg.icon{width:25px;height:25px;vertical-align:middle}
