@@ -205,8 +205,25 @@ b,strong{letter-spacing:.01em}
 .photo-head{padding:0 7vw 45px;max-width:1240px;margin:auto}
 .photo-head-title{font:700 clamp(34px,4vw,52px)/.98 var(--display);letter-spacing:-.07em;margin:18px 0 0}
 
-@media(min-width:801px){.about-layout .about-sticky{position:sticky;top:110px;align-self:start}}
-.about-layout .prose .lead + p::first-letter{font:700 64px/.8 var(--display);color:var(--red);float:left;margin:8px 12px 0 0}
-.about-layout .tag-row{border-top:1px solid var(--line);padding-top:25px}
-.at-work-head{padding-bottom:0}
-@media(min-width:801px){.photo-grid.at-work figure:nth-child(2){margin-top:36px}}
+
+.about-single .prose .lead + p::first-letter{font:700 64px/.8 var(--display);color:var(--red);float:left;margin:8px 12px 0 0}
+.about-single .tag-row{border-top:1px solid var(--line);padding-top:25px}
+
+
+
+.about-single .prose{margin:0 auto}
+.prose figure{margin:42px 0}
+.prose figure img{width:100%;height:320px;object-fit:cover;border-radius:16px}
+.prose figcaption{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:12px}
+.closing-center{flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:28px}
+.button-big{padding:22px 36px;font-size:14px;letter-spacing:.14em}
+.photo-grid figure,.photo-strip figure,.prose figure{overflow:hidden}
+.photo-grid img,.photo-strip img,.prose figure img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.photo-grid figure:hover img,.photo-strip figure:hover img,.prose figure:hover img{transform:scale(1.04)}
+.project-card{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.project-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.work-row{transition:padding .25s,background .25s}
+.work-row:hover{background:rgba(255,255,255,.55)}
+.button{transition:transform .25s,background .25s,box-shadow .25s}
+.button:hover{box-shadow:0 12px 26px rgba(0,0,0,.18)}
+@media(prefers-reduced-motion:reduce){.reveal{transition:none;opacity:1;transform:none}.ticker-track{animation:none}.photo-grid img,.photo-strip img,.prose figure img,.project-card{transition:none}.project-card:hover{transform:none;box-shadow:none}}
