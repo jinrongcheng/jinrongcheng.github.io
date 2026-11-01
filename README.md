@@ -24,3 +24,6 @@ Full-screen portrait hero, Anton campaign type, navy/red/gold scheme (AOC-style 
 
 ## V3 hero
 Split hero: portrait panel on the left, readable text panel on the right, so text never sits over the photo. Copy rewritten in first person with specific Willowdale, YINC, Ward 19, and Model UN detail.
+
+## V4
+Hero split 75% photo / 25% text, smaller headline and plain body text so the hero text is not squished. Copy toned down to plain, factual role descriptions, no self-praise.
