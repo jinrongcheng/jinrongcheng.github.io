@@ -239,3 +239,10 @@ b,strong{letter-spacing:.01em}
 .photo-grid img.focus-top{object-position:center 20%}
 
 .prose figure img.focus-kitten{object-position:35% center}
+
+.project-grid{gap:32px}
+.project-card{padding:40px}
+.project-card h2{line-height:1.12;letter-spacing:-.02em;margin:20px 0 18px}
+.project-card p{line-height:1.9}
+.photo-grid img.focus-kitten{object-position:35% center}
+.page-hero-photo.focus-left{object-position:20% center}
