@@ -303,3 +303,9 @@ main{animation:page-in .5s ease both}
 
 /* ---- V50 events list (Mike Collins / Abbott style, Jin format) ---- */
 .writing-item .no{white-space:nowrap}
+
+/* ---- V51 campaign-footer nav + keyboard focus (Roy Cooper / Ossoff / Graham style) ---- */
+.footer-nav{background:var(--ink);color:#fff;padding:28px 4.5vw 0;display:flex;gap:26px;flex-wrap:wrap;font-size:12px;font-weight:800;letter-spacing:.08em}
+.footer-nav a{opacity:.8}
+.footer-nav a:hover{opacity:1;color:var(--yellow)}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px;box-shadow:0 0 0 5px rgba(6,18,38,.35)}
