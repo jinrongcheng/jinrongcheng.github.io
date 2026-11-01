@@ -279,3 +279,24 @@ html,body{overflow-x:clip}
 .cookie-accept{background:var(--red);color:#fff}
 .cookie-decline{background:transparent;color:#fff;border:1px solid #fff!important}
 @media(max-width:600px){.cookie-banner{left:10px;right:10px;bottom:10px;padding:16px}}
+
+/* ---- V49 Sacha Lord-inspired motion: bold, visual, still subtle ---- */
+main{animation:page-in .5s ease both}
+@keyframes page-in{from{opacity:0}to{opacity:1}}
+.site-header.scrolled{box-shadow:0 8px 24px rgba(6,18,38,.12)}
+.nav a{position:relative}
+.nav a:after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:100%;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.nav a:hover:after,.nav a.active:after{transform:scaleX(1)}
+.nav-contact:after{display:none}
+.button span{display:inline-block;transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.button:hover span{transform:translateX(5px)}
+.work-row .arrow{transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.work-row:hover .arrow{transform:translateX(6px)}
+.media-card{transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s cubic-bezier(.2,.7,.2,1)}
+.media-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(6,18,38,.14)}
+.project-card .mark{transition:transform .4s cubic-bezier(.2,.7,.2,1);transform-origin:top right}
+.project-card:hover .mark{transform:scale(1.15)}
+.photo-grid figcaption{transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.photo-grid figure:hover figcaption{transform:translateY(-2px)}
+.page-hero-photo{animation:hero-photo-in 1.4s cubic-bezier(.2,.7,.2,1) both}
+@keyframes hero-photo-in{from{transform:scale(1.06);opacity:.85}to{transform:scale(1);opacity:1}}
