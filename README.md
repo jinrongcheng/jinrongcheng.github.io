@@ -18,3 +18,6 @@ A responsive multi-page personal portfolio for GitHub Pages.
 Upload the contents of this folder to the root of `jinrongcheng.github.io`. In GitHub Settings → Pages, set the custom domain to `jinrongcheng.ca`.
 
 Some supporting editorial photography on the homepage is loaded from Unsplash. The personal portrait is hosted locally in `assets/`.
+
+## Campaign v2
+Full-screen portrait hero, Anton campaign type, navy/red/gold scheme (AOC-style bold type and portrait-first hero; Bradford-style three clear pillars), scroll progress, parallax hero, directional reveals, and count-up stats. Contact and footer link to Jin's LinkedIn. This is a personal site in campaign style, not a candidacy page: no vote/donate language.
