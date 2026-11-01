@@ -233,3 +233,5 @@ b,strong{letter-spacing:.01em}
 
 .page-hero-photo.focus-top{object-position:center 25%}
 .photo-grid img.focus-far-left{object-position:0% center}
+
+.photo-grid img.focus-far-right{object-position:100% center}
