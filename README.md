@@ -27,3 +27,6 @@ Split hero: portrait panel on the left, readable text panel on the right, so tex
 
 ## V4
 Hero split 75% photo / 25% text, smaller headline and plain body text so the hero text is not squished. Copy toned down to plain, factual role descriptions, no self-praise.
+
+## V5
+All slogan headings replaced with plain page labels. Hero now uses toronto-waterfront.jpg (1170px wide) instead of the 520px portrait crop, so it is sharper at hero size. A two-photo strip was added to the homepage. No other portrait photos were in the supplied files.
