@@ -169,3 +169,8 @@ b,strong{letter-spacing:.01em}
 .news-section p{line-height:1.7;color:var(--muted);max-width:620px}
 .news-placeholder{margin-top:35px;max-width:620px}
 @media(max-width:800px){.media-grid{grid-template-columns:1fr;padding:60px 7vw 30px}}
+
+.site-index{margin-top:35px;border-top:1px solid var(--line)}
+.site-index span{display:block;font-size:9px;font-weight:800;letter-spacing:.15em;color:var(--muted);padding:18px 0 6px}
+.site-index a{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line);font-size:12px;font-weight:700;letter-spacing:.08em}
+.site-index a b{color:var(--red)}
