@@ -32,3 +32,19 @@ if(counters.length){
   })},{threshold:.5});
   counters.forEach(el=>co.observe(el));
 }
+
+// Cookie consent: analytics off by default, on only after Accept
+(function(){
+  var key='cookie-consent';
+  function apply(v){try{if(window.gtag)gtag('consent','update',{'analytics_storage':v});}catch(e){}}
+  var stored=null; try{stored=localStorage.getItem(key);}catch(e){}
+  if(stored==='granted'){apply('granted');}
+  var reset=document.getElementById('reset-cookie-choice');
+  if(reset){reset.addEventListener('click',function(){try{localStorage.removeItem(key);}catch(e){}location.reload();});}
+  if(stored){return;}
+  var b=document.createElement('div'); b.className='cookie-banner'; b.setAttribute('role','dialog'); b.setAttribute('aria-label','Cookie consent');
+  b.innerHTML='<p>This site uses Google Analytics cookies to see how many people visit and which pages they read. Accept to allow them, or decline — the site still works either way. <a href="cookies.html">Cookie policy</a></p><button class="cookie-accept" type="button">Accept</button><button class="cookie-decline" type="button">Decline</button>';
+  document.body.appendChild(b);
+  b.querySelector('.cookie-accept').addEventListener('click',function(){try{localStorage.setItem(key,'granted');}catch(e){}apply('granted');b.remove();});
+  b.querySelector('.cookie-decline').addEventListener('click',function(){try{localStorage.setItem(key,'denied');}catch(e){}apply('denied');b.remove();});
+})();
