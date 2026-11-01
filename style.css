@@ -300,3 +300,6 @@ main{animation:page-in .5s ease both}
 .photo-grid figure:hover figcaption{transform:translateY(-2px)}
 .page-hero-photo{animation:hero-photo-in 1.4s cubic-bezier(.2,.7,.2,1) both}
 @keyframes hero-photo-in{from{transform:scale(1.06);opacity:.85}to{transform:scale(1);opacity:1}}
+
+/* ---- V50 events list (Mike Collins / Abbott style, Jin format) ---- */
+.writing-item .no{white-space:nowrap}
