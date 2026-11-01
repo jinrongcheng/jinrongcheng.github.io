@@ -237,3 +237,5 @@ b,strong{letter-spacing:.01em}
 .photo-grid img.focus-far-right{object-position:100% center}
 .photo-grid figure.span-2{grid-column:span 2}
 .photo-grid img.focus-top{object-position:center 20%}
+
+.prose figure img.focus-kitten{object-position:35% center}
