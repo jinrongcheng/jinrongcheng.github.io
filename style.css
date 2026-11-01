@@ -246,3 +246,18 @@ b,strong{letter-spacing:.01em}
 .project-card p{line-height:1.9}
 .photo-grid img.focus-kitten{object-position:35% center}
 .page-hero-photo.focus-left{object-position:20% center}
+
+/* ---- V42 mobile compatibility: no horizontal scroll, safe titles, tap targets ---- */
+html,body{overflow-x:clip}
+@media(max-width:800px){
+.campaign-hero{overflow:hidden}
+.campaign-hero-photo{transform:none!important}
+.page-hero h1{font-size:clamp(42px,13vw,64px);overflow-wrap:break-word}
+.menu-toggle{padding:12px 10px}
+.project-card{padding:28px 24px}
+}
+@media(max-width:460px){
+.stat strong{font-size:32px}
+.project-card{padding:24px 20px}
+.media-card{padding:24px 20px}
+}
