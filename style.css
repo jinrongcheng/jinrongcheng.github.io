@@ -131,7 +131,7 @@
 .campaign-hero-content{min-width:0;overflow-wrap:break-word}
 
 /* ---- V7: varied gallery + much looser bold type ---- */
-.photo-strip{grid-template-columns:repeat(3,1fr)}
+.photo-strip{grid-template-columns:repeat(2,1fr)}
 .campaign-hero h1{letter-spacing:.04em;line-height:1.22;word-spacing:.08em}
 .campaign-hero .hero-lead{letter-spacing:.01em;line-height:1.5}
 .page-hero h1{letter-spacing:.03em;line-height:1.18}
@@ -235,3 +235,5 @@ b,strong{letter-spacing:.01em}
 .photo-grid img.focus-far-left{object-position:0% center}
 
 .photo-grid img.focus-far-right{object-position:100% center}
+.photo-grid figure.span-2{grid-column:span 2}
+.photo-grid img.focus-top{object-position:center 20%}
