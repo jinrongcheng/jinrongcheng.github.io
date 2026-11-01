@@ -170,10 +170,10 @@ b,strong{letter-spacing:.01em}
 .news-placeholder{margin-top:35px;max-width:620px}
 @media(max-width:800px){.media-grid{grid-template-columns:1fr;padding:60px 7vw 30px}}
 
-.site-index{margin-top:35px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.site-index span{width:100%;font-size:9px;font-weight:800;letter-spacing:.15em;color:var(--muted);padding:6px 0}
-.site-index a{display:inline-flex;align-items:center;gap:10px;padding:11px 17px;border:1px solid var(--ink);border-radius:999px;background:white;font-size:12px;font-weight:700;letter-spacing:.06em;box-shadow:0 6px 16px rgba(6,18,38,.08)}
-.site-index a:hover{background:var(--blue);color:white;border-color:var(--blue)}
+.site-index{margin-top:35px;border-top:1px solid var(--line)}
+.site-index span{display:block;font-size:9px;font-weight:800;letter-spacing:.15em;color:var(--muted);padding:18px 0 6px;text-transform:uppercase}
+.site-index a{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line);border-radius:0;background:none;box-shadow:none;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.site-index a:hover{color:var(--blue)}
 .site-index a b{color:var(--red)}
 
 .stat span{letter-spacing:.14em;line-height:1.6}
