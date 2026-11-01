@@ -21,3 +21,6 @@ Some supporting editorial photography on the homepage is loaded from Unsplash. T
 
 ## Campaign v2
 Full-screen portrait hero, Anton campaign type, navy/red/gold scheme (AOC-style bold type and portrait-first hero; Bradford-style three clear pillars), scroll progress, parallax hero, directional reveals, and count-up stats. Contact and footer link to Jin's LinkedIn. This is a personal site in campaign style, not a candidacy page: no vote/donate language.
+
+## V3 hero
+Split hero: portrait panel on the left, readable text panel on the right, so text never sits over the photo. Copy rewritten in first person with specific Willowdale, YINC, Ward 19, and Model UN detail.
