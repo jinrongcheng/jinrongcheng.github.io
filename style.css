@@ -230,4 +230,6 @@ b,strong{letter-spacing:.01em}
 
 @media(max-width:800px){.about-single .prose figure img{height:280px}}
 
-.photo-grid img.focus-far-right{object-position:100% center}
+
+.page-hero-photo.focus-top{object-position:center 25%}
+.photo-grid img.focus-far-left{object-position:0% center}
