@@ -129,3 +129,14 @@
 .campaign-hero > *{min-width:0}
 .campaign-hero-photo{min-width:0}
 .campaign-hero-content{min-width:0;overflow-wrap:break-word}
+
+/* ---- V7: varied gallery + much looser bold type ---- */
+.photo-strip{grid-template-columns:repeat(3,1fr)}
+.campaign-hero h1{letter-spacing:.04em;line-height:1.22;word-spacing:.08em}
+.campaign-hero .hero-lead{letter-spacing:.01em;line-height:1.5}
+.page-hero h1{letter-spacing:.03em;line-height:1.18}
+.display-copy{letter-spacing:.02em;line-height:1.45}
+.prose.lead{letter-spacing:.01em;line-height:1.6}
+.timeline-item h2,.project-card h2,.writing-item h2,.work-row h3{letter-spacing:.02em;line-height:1.35}
+.image-story-copy h2,.closing h2,.contact-layout h2{letter-spacing:.02em;line-height:1.3}
+b,strong{letter-spacing:.01em}
