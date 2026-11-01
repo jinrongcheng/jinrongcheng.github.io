@@ -196,3 +196,8 @@ b,strong{letter-spacing:.01em}
 @media (max-width:800px){.photo-pair{grid-template-columns:1fr}.photo-pair img{height:240px}}
 
 .page-hero{background-image:radial-gradient(rgba(255,255,255,.13) 1.2px,transparent 1.2px);background-size:22px 22px}
+
+.photo-grid img.focus-left{object-position:12% center}
+.photo-grid img.focus-left-mid{object-position:30% center}
+.photo-grid img.focus-right-mid{object-position:65% center}
+.photo-grid img.focus-right{object-position:78% center}
