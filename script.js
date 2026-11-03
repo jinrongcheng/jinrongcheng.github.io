@@ -41,6 +41,12 @@ if(counters.length){
   if(stored==='granted'){apply('granted');}
   var reset=document.getElementById('reset-cookie-choice');
   if(reset){reset.addEventListener('click',function(){try{localStorage.removeItem(key);}catch(e){}location.reload();});}
+  var statusEl=document.getElementById('cookie-choice-status');
+  if(statusEl){statusEl.textContent=stored?(stored==='granted'?'Accepted':'Declined'):'Not set yet';}
+  var acc=document.getElementById('accept-cookie-choice');
+  if(acc){acc.addEventListener('click',function(){try{localStorage.setItem(key,'granted');}catch(e){}apply('granted');if(statusEl)statusEl.textContent='Accepted';var bb=document.querySelector('.cookie-banner');if(bb)bb.remove();});}
+  var dec=document.getElementById('decline-cookie-choice');
+  if(dec){dec.addEventListener('click',function(){try{localStorage.setItem(key,'denied');}catch(e){}apply('denied');if(statusEl)statusEl.textContent='Declined';var bb=document.querySelector('.cookie-banner');if(bb)bb.remove();});}
   if(stored){return;}
   var b=document.createElement('div'); b.className='cookie-banner'; b.setAttribute('role','dialog'); b.setAttribute('aria-label','Cookie consent');
   b.innerHTML='<p>This site uses Google Analytics cookies to see how many people visit and which pages they read. Accept to allow them, or decline — the site still works either way. <a href="cookies.html">Cookie policy</a></p><button class="cookie-accept" type="button">Accept</button><button class="cookie-decline" type="button">Decline</button>';
